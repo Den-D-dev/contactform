@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Input</title>
+    <style media="screen">
+    body {
+        padding-left: 30%;
+        padding-bottom: 50px;
+    }
+        form {
+            width: 45%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="processform.php" method="POST"  name="form1">
+        <fieldset>
+            <legend>Accounts    </legend>
+            <label for="firstname">First Name </label><br>
+            <input type="text" name="firstname" placeholder="Enter first name" required >
+            <br><br>
+
+            <label for="lastname">Last Name </label></br>
+            <input type="text" name="lastname" placeholder="Enter Last Name" required>
+            </br><br>
+
+            <label for="gender">Gender: </label><br>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            </br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+            <label for="message">Message: </label></br>
+            <textarea name="message" rows="4" cols="50" placeholder="Send a message..." style="padding:10px;"></textarea>
+        <br><br>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+
+            <legend>User Infor</legend>
+            <label>Location</label><br>
+            <select name="location">
+                <option value="MA">MA</option>
+                <option value="NY">NY</option>
+                <option value="CA">CA</option>
+                <option value="NG">NG</option>
+            </select>
+            <br><br>
+
+            <label for="depatment">Department</label></br>
+            <select name="depatment">
+                <option>Select Department</option>
+                <option>Administrative</option>
+                <option>Marketing</option>
+                <option>Accounts</option>
+                <option>I.T support</option>
+            </select>
+            <br><br>
+
+            <label>Soft Skills</label><br>
+            <input type="checkbox" name="interest" value="Interpersonal skill">
+             Interpersonal skill
+             <input type="checkbox" name="interest" value="Creativity">
+             Creativity
+             <input type="checkbox" name="interest" value="Public speaking">
+              Public speaking <br>
+            <input type="checkbox" name="interest" value="Emotional intelligence">
+             Emotional intelligence
+            <input type="checkbox" name="interest" value="Management">
+              Management
+             <br><br>
+         </fieldset>
+
+         <p>
+             <input type="checkbox" name="remember"/>Remember me.
+         </p>
+        <br>
+        <button type="submit" style="padding:10px">Submit</button>
+
+    </form>
+</form>
+</body>
+</html>
