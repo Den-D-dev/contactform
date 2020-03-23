@@ -6,11 +6,11 @@
     <title>Form & Input</title>
     <style media="screen">
     body {
-        padding-left: 30%;
+        padding-left: 5%;
         padding-bottom: 50px;
-    }
+        }
         form {
-            width: 45%;
+            width: 425px;
 
         }
     </style>
@@ -22,11 +22,11 @@
         <fieldset>
             <legend>Accounts    </legend>
             <label for="firstname">First Name </label><br>
-            <input type="text" name="firstname" placeholder="Enter first name" required >
+            <input type="text" name="first_name" placeholder="Enter first name" required >
             <br><br>
 
             <label for="lastname">Last Name </label></br>
-            <input type="text" name="lastname" placeholder="Enter Last Name" required>
+            <input type="text" name="last_name" placeholder="Enter Last Name" required>
             </br><br>
 
             <label for="gender">Gender: </label><br>
@@ -58,8 +58,8 @@
             </select>
             <br><br>
 
-            <label for="depatment">Department</label></br>
-            <select name="depatment">
+            <label for="department">Department</label></br>
+            <select name="department">
                 <option>Select Department</option>
                 <option>Administrative</option>
                 <option>Marketing</option>
@@ -68,7 +68,7 @@
             </select>
             <br><br>
 
-            <label>Soft Skills</label><br>
+            <label>Soft Skill (select one)</label><br>
             <input type="checkbox" name="interest" value="Interpersonal skill">
              Interpersonal skill
              <input type="checkbox" name="interest" value="Creativity">
@@ -83,7 +83,7 @@
          </fieldset>
 
          <p>
-             <input type="checkbox" name="remember"/>Remember me.
+             <input type="checkbox" name="terms" value="accepted"/>I accept the terms and conditions.
          </p>
         <br>
         <button type="submit" style="padding:10px">Submit</button>
